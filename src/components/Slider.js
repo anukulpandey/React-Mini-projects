@@ -31,11 +31,11 @@ export default class Slider extends React.Component {
     render() {
         return(
             <div>
-                 <button onClick={this.previous}>
+                 <button style={{borderRadius:'5px',border:'0.25px solid grey',padding:'5px',margin:'10px'}}  onClick={this.previous}>
                     previous
                 </button>
-                <img src={this.state.img[this.state.index]} height='200px' width='200px' alt="no image" />
-                <button onClick={this.next}>
+                <img style={{borderRadius:'15px',margin:'10px',border:'1px solid black'}} src={this.state.img[this.state.index]} height='200px' width='200px' alt="no image" />
+                <button style={{borderRadius:'5px',border:'0.25px solid grey',padding:'5px',margin:'10px'}} onClick={this.next}>
                     next
                 </button>
             </div>
